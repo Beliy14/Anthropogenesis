@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Noto Sans", sans-serif;
+  color: #eee;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  background-color: #2d3036;
+  text-align: center;
+}
+
+.title {
+  padding: 80px 0 20px 0;
+}
+
+.btnBlock {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #292b38;
+  border: 1px solid #3d3d3d;
+  padding: 5px 10px;
+  font-size: 18px;
+  margin: 5px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  user-select: none;
+
+  transition: 0.1s ease;
+
+  &:hover {
+    background-color: #2f3246;
+  }
+
+  &[disabled] {
+    background-color: #40414d;
+    color: #b3b3b3;
+    cursor: not-allowed;
+  }
+}
+
+.btnSettings {
+  padding: 8.5px 10px;
+}
