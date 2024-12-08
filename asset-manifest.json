@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Anthropogenesis/static/css/main.ed42f437.css",
-    "main.js": "/Anthropogenesis/static/js/main.9c7609ec.js",
+    "main.css": "/Anthropogenesis/static/css/main.31593990.css",
+    "main.js": "/Anthropogenesis/static/js/main.f227ce76.js",
     "static/media/brain.webp": "/Anthropogenesis/static/media/brain.be22a2ab283fbc4def67.webp",
     "static/media/background-way.jpg": "/Anthropogenesis/static/media/background-way.b67ca97ac4922591cd2b.jpg",
     "static/media/4.png": "/Anthropogenesis/static/media/4.8d25ab266cddc018a9eb.png",
@@ -11,11 +11,11 @@
     "static/media/2.png": "/Anthropogenesis/static/media/2.0fa1e5fd49b23005d09c.png",
     "static/media/1.png": "/Anthropogenesis/static/media/1.afaa99c9c76c59bfba51.png",
     "index.html": "/Anthropogenesis/index.html",
-    "main.ed42f437.css.map": "/Anthropogenesis/static/css/main.ed42f437.css.map",
-    "main.9c7609ec.js.map": "/Anthropogenesis/static/js/main.9c7609ec.js.map"
+    "main.31593990.css.map": "/Anthropogenesis/static/css/main.31593990.css.map",
+    "main.f227ce76.js.map": "/Anthropogenesis/static/js/main.f227ce76.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed42f437.css",
-    "static/js/main.9c7609ec.js"
+    "static/css/main.31593990.css",
+    "static/js/main.f227ce76.js"
   ]
 }
