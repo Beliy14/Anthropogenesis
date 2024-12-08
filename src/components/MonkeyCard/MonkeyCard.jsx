@@ -15,8 +15,16 @@ const MonkeyCard = ({ level, setLevelCount, levelCount, buster, language, gameEn
     const offsetX = e.clientX - rect.left - rect.width / 2
     const offsetY = e.clientY - rect.top - rect.height / 2
 
-    setLevelCount(levelCount + buster)
-    setScores([...scores, { x: e.clientX - rect.left, y: e.clientY - rect.top, score: buster }])
+    setLevelCount((prevLevelCount) => {
+      const newLevelCount = prevLevelCount + buster
+      localStorage.setItem("levelCount", newLevelCount)
+      return newLevelCount
+    })
+
+    setScores((prevScores) => [
+      ...prevScores,
+      { x: e.clientX - rect.left, y: e.clientY - rect.top, score: buster }
+    ])
 
     const tiltX = (offsetY / rect.height) * 20
     const tiltY = (offsetX / rect.width) * -20

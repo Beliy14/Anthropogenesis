@@ -22,3 +22,14 @@ export const countBorder = {
   5: "1500",
   6: "3000",
 }
+
+export const levelsAutoclicker = [
+  { level: 1, price: "100", autoclick: 2 },
+  { level: 2, price: "250", autoclick: 3, shouldLevel: { en: "LVL 1", ru: "Ур. 1" } },
+  { level: 3, price: "500", autoclick: 4, shouldLevel: { en: "LVL 2", ru: "Ур. 2" } },
+  { level: 4, price: "800", autoclick: 5, shouldLevel: { en: "LVL 3", ru: "Ур. 3" } },
+]
+
+export const MAX_LEVEL = 7
+export const BUSTER_COOLDOWN = 60000
+export const BUSTER_TIME = 30000

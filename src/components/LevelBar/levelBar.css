@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 18em;
+  width: 19em;
   margin: 10px auto;
 }
 
@@ -23,4 +23,11 @@
 
 .count {
   margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  & svg {
+    font-size: 18px;
+  }
 }
