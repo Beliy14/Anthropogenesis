@@ -23,7 +23,6 @@ function App() {
   const [hoverInfo, setHoverInfo] = useState({ text: "", position: { top: 0, left: 0 } })
   const [gameEnd, setGameEnd] = useState(false)
 
-
   const busterInterval = useRef(null)
   const autoclickInterval = useRef(null)
 
@@ -63,11 +62,27 @@ function App() {
     }
   }, [level])
 
+  useEffect(() => {
+    let timeoutId
+
+    if (buster === 2) {
+      timeoutId = setTimeout(() => {
+        if (busterTime === BUSTER_TIME) {
+          window.location.reload()
+        }
+      }, 1100)
+    }
+
+    return () => {
+      clearTimeout(timeoutId)
+    }
+  }, [buster, busterTime])
+
   const onBuster = () => {
     setBusterTime(BUSTER_TIME)
     localStorage.setItem("busterTime", BUSTER_TIME)
     setBuster(2)
-    clearInterval(busterInterval.current) 
+    clearInterval(busterInterval.current)
     busterInterval.current = setInterval(() => {
       setBusterTime((prev) => {
         const newTime = prev - 1000
